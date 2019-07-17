@@ -18,6 +18,7 @@ export class AppComponent {
   }
 
   getCharactersCountObject(strArr: string[]) {
+    //  Write a function which accepts an array of strings and returns a map of character to count of the character //
     let obj = {};
     strArr.map(str => {
       str.split('').map(ch => {
@@ -32,6 +33,7 @@ export class AppComponent {
   }
 
   getKeys(obj: object) {
+    // Write a function to return all the keys present in an object at any level. //
     Object.keys(obj).map(k => {
       if (typeof obj[k] === 'object' && obj[k] !== null) {
         this.objKeys = [...this.getKeys(obj[k])]
