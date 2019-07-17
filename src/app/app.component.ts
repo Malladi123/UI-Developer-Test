@@ -10,7 +10,9 @@ export class AppComponent {
   objKeys = []
 
   constructor() {
-    console.log(this.getCharactersCountObject(["hello world", "hello world"]));
+    // change the values here for getting the output //
+    
+    console.log(this.getCharactersCountObject([ "Ind", "Namo"]));
     console.log(this.getKeys({ a: 5, b: { c: { d: 10, t: 21 }, k: 43 } }));
     console.log(this.reverseWordofStr("hello world"));
     console.log(this.reverseString('hello world'));
